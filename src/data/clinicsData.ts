@@ -1,3 +1,5 @@
+import { IMAGES } from '../constants/images';
+
 export interface DentalClinicLocation {
   id: string;
   name: string;
@@ -26,7 +28,7 @@ export const UABC_CLINICS: DentalClinicLocation[] = [
     postalCode: 'C.P. 21040',
     reference: 'Junto a la Unidad Mexicali y Centro de Gobierno',
     mapsUrl: 'https://maps.app.goo.gl/XsgxhHcmqkcn8Kn47',
-    image: '/assets/aistudio/images__1__8726f80d.jpg',
+    image: IMAGES.calafiaFachada,
     imageAlt: 'Fachada oficial de la Clínica Calafia de la Facultad de Odontología UABC Mexicali',
     description: 'Sede central de la Facultad de Odontología UABC en Mexicali. Alberga las clínicas docentes integrales de pregrado y posgrado, quirófanos y laboratorios de simulación.',
     servicesOffered: [
@@ -49,7 +51,7 @@ export const UABC_CLINICS: DentalClinicLocation[] = [
     postalCode: 'C.P. 21090',
     reference: 'Sobre el corredor de Calle 11, al poniente de la ciudad',
     mapsUrl: 'https://maps.app.goo.gl/NsBcDFJ69YuXrFgo7',
-    image: '/assets/aistudio/calle_11_c044428a.webp',
+    image: IMAGES.calle11Clinica,
     imageAlt: 'Área de unidades clínicas docentes y sillones odontológicos de Clínica Calle 11 UABC',
     description: 'Importante módulo clínico odontológico de la UABC que brinda atención y prácticas clínicas supervisadas a los habitantes y familias del sector poniente de Mexicali.',
     servicesOffered: [
@@ -72,7 +74,7 @@ export const UABC_CLINICS: DentalClinicLocation[] = [
     postalCode: 'C.P. 21383',
     reference: 'Zona sur de Mexicali, conectando Rivera Campestre y alrededores',
     mapsUrl: 'https://maps.app.goo.gl/b3YmuJUnshRBjcHD8',
-    image: '/assets/aistudio/naranjos_5987c28f.jpg',
+    image: IMAGES.naranjosClinica,
     imageAlt: 'Fachada oficial del edificio de la Universidad Autónoma de Baja California - Clínica Dental Naranjos',
     description: 'Clínica dental de vinculación comunitaria diseñada para acercar servicios de salud bucal universitaria a las colonias del sur de la ciudad con calidez y accesibilidad.',
     servicesOffered: [

@@ -15,6 +15,7 @@ import {
   Play
 } from 'lucide-react';
 import { EDUCATIONAL_TOPICS } from '../data/learningData';
+import { IMAGES } from '../constants/images';
 
 interface LearningSectionProps {
   onOpenTimer: () => void;
@@ -51,7 +52,7 @@ export const LearningSection: React.FC<LearningSectionProps> = ({ onOpenTimer })
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden shadow-md border-4 border-white aspect-[4/3]">
                 <img
-                  src="/src/assets/images/mastic_brushing_guide_1794083839816.jpg"
+                  src={IMAGES.masticBrushing}
                   alt="Mascota Mastic enseñando la técnica divertida de cepillado con burbujas de pasta"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

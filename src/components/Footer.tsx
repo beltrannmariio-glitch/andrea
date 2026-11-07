@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Phone, Mail, Globe, Facebook, Heart } from 'lucide-react';
 import { NavSection } from '../types';
+import { IMAGES } from '../constants/images';
 
 interface FooterProps {
   onNavigate: (section: NavSection) => void;
@@ -18,14 +19,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             {/* Institutional Logos in Footer */}
             <div className="flex items-center gap-2.5 bg-white/10 px-3 py-1.5 rounded-2xl w-fit border border-white/10">
               <img
-                src="/assets/aistudio/uabc_escudo_completo.png"
+                src={IMAGES.uabcEscudo}
                 alt="Escudo Oficial Completo UABC"
                 className="h-10 w-auto max-w-[40px] object-contain rounded bg-white p-0.5 shrink-0"
                 referrerPolicy="no-referrer"
               />
               <div className="h-7 w-px bg-white/20" />
               <img
-                src="/assets/aistudio/descarga_2756a433.png"
+                src={IMAGES.fomLogo}
                 alt="Logo FOM Facultad de Odontología Mexicali"
                 className="h-10 w-auto object-contain rounded bg-white p-0.5 shrink-0"
                 referrerPolicy="no-referrer"

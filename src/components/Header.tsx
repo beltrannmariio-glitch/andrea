@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Phone, BookOpen, Layers, Home } from 'lucide-react';
 import { NavSection } from '../types';
+import { IMAGES } from '../constants/images';
 
 interface HeaderProps {
   activeSection: NavSection;
@@ -20,14 +21,14 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, onNavigate }) => 
           {/* Institutional Logos Lockup */}
           <div className="flex items-center gap-2 bg-white px-2 py-1 rounded-xl border border-[#F1E9DA] shadow-xs">
             <img
-              src="/assets/aistudio/uabc_escudo_completo.png"
+              src={IMAGES.uabcEscudo}
               alt="Escudo Oficial Completo UABC"
               className="h-9 w-auto max-w-[38px] object-contain shrink-0"
               referrerPolicy="no-referrer"
             />
             <div className="h-7 w-px bg-[#E2E8F0]" />
             <img
-              src="/assets/aistudio/descarga_2756a433.png"
+              src={IMAGES.fomLogo}
               alt="Logo Oficial FOM Facultad de Odontología Mexicali"
               className="h-8 w-auto object-contain shrink-0"
               referrerPolicy="no-referrer"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, ArrowRight, BookOpen, Clock, Heart, Award, Shield, CheckCircle } from 'lucide-react';
 import { NavSection } from '../types';
+import { IMAGES } from '../constants/images';
 
 interface HeroSectionProps {
   onNavigate: (section: NavSection) => void;
@@ -28,14 +29,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenTime
               <div className="flex flex-wrap items-center gap-3">
                 <div className="flex items-center gap-2.5 bg-white px-3.5 py-2 rounded-2xl border border-[#F1E9DA] shadow-xs">
                   <img
-                    src="/assets/aistudio/uabc_escudo_completo.png"
+                    src={IMAGES.uabcEscudo}
                     alt="Escudo Oficial Completo Universidad Autónoma de Baja California"
                     className="h-12 w-auto max-w-[48px] object-contain shrink-0"
                     referrerPolicy="no-referrer"
                   />
                   <div className="h-9 w-px bg-[#E2E8F0]" />
                   <img
-                    src="/assets/aistudio/descarga_2756a433.png"
+                    src={IMAGES.fomLogo}
                     alt="Logo FOM Facultad de Odontología Mexicali"
                     className="h-10 w-auto object-contain shrink-0"
                     referrerPolicy="no-referrer"
@@ -115,7 +116,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenTime
                 {/* Hero Mascot Image */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-b from-[#FFF7ED] to-[#FED7AA]/30 aspect-square">
                   <img
-                    src="/src/assets/images/mastic_hero_mascot_1794083839489.jpg"
+                    src={IMAGES.masticHero}
                     alt="Mascota Mastic, un alegre diente 3D con cepillo dental y pasta sonriendo amigablemente"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     referrerPolicy="no-referrer"

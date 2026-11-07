@@ -11,6 +11,7 @@ import {
   Navigation
 } from 'lucide-react';
 import { ClinicsLocations } from './ClinicsLocations';
+import { IMAGES } from '../constants/images';
 
 export const ContactSection: React.FC = () => {
   const [userName, setUserName] = useState('');
@@ -169,7 +170,7 @@ export const ContactSection: React.FC = () => {
             <div>
               <div className="relative rounded-2xl overflow-hidden mb-6 aspect-[16/9] border border-[#F1E9DA]">
                 <img
-                  src="/assets/aistudio/images__1__8726f80d.jpg"
+                  src={IMAGES.calafiaFachada}
                   alt="Fachada oficial de la Clínica Calafia - Facultad de Odontología UABC Mexicali"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -182,14 +183,14 @@ export const ContactSection: React.FC = () => {
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center gap-2 bg-[#FFFDF9] px-2.5 py-1.5 rounded-xl border border-[#F1E9DA]">
                   <img
-                    src="/assets/aistudio/uabc_escudo_completo.png"
+                    src={IMAGES.uabcEscudo}
                     alt="Escudo Oficial Completo UABC"
                     className="h-9 w-auto max-w-[36px] object-contain shrink-0"
                     referrerPolicy="no-referrer"
                   />
                   <div className="h-7 w-px bg-[#E2E8F0]" />
                   <img
-                    src="/assets/aistudio/descarga_2756a433.png"
+                    src={IMAGES.fomLogo}
                     alt="Logo FOM"
                     className="h-8 w-auto object-contain shrink-0"
                     referrerPolicy="no-referrer"
