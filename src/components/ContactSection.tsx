@@ -18,7 +18,7 @@ export const ContactSection: React.FC = () => {
   const [userQuery, setUserQuery] = useState('');
   const [serviceOfInterest, setServiceOfInterest] = useState('Odontología Preventiva');
 
-  const INSTITUTIONAL_EMAIL = 'andrea.alvarado.villafan@uabc.edu.mx';
+  const INSTITUTIONAL_EMAIL = 'alexis.marquez31@uabc.edu.mx';
   const INSTITUTIONAL_PHONE = '686 557 3268';
   const INSTITUTIONAL_WEB = 'https://odontologia.mxl.uabc.mx/odo3/';
   const INSTITUTIONAL_FB = 'https://www.facebook.com/facultadde.odontologiamexicali/?locale=es_LA';

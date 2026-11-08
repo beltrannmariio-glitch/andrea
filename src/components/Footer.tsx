@@ -118,10 +118,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#0D9488] shrink-0" />
                 <a
-                  href="mailto:andrea.alvarado.villafan@uabc.edu.mx"
+                  href="mailto:alexis.marquez31@uabc.edu.mx"
                   className="text-slate-200 hover:underline break-all"
                 >
-                  andrea.alvarado.villafan@uabc.edu.mx
+                  alexis.marquez31@uabc.edu.mx
                 </a>
               </div>
               <div className="flex items-center gap-2">
